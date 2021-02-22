@@ -11,11 +11,13 @@ CONFIG += c++11
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
-    player.cpp
+    player.cpp \
+    videosnapshot.cpp
 
 HEADERS += \
     mainwindow.h \
-    player.h
+    player.h \
+    videosnapshot.h
 
 FORMS += \
     mainwindow.ui

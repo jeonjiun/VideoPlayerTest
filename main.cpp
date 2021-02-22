@@ -80,6 +80,7 @@ int main(int argc, char* argv[])
 #else
 
 #include "player.h"
+#include "videosnapshot.h"
 
 #include <QFileDialog>
 int main(int argc, char *argv[])
@@ -90,6 +91,10 @@ int main(int argc, char *argv[])
 
     QString fileOpen = QFileDialog::getOpenFileName(nullptr, "Load a file", "~");
 
+
+    VideoSnapshot::snapshot(fileOpen,"D:/a.jpg");
+
+    return a.exec();
 
     Mwindow player;
     player.resize(600,480);
